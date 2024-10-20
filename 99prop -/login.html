@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("./login.jpeg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 600px; 
+            width: 100%; 
+            min-width: 300px;
+            margin: auto; 
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        
+        h2 {
+            text-align: center;
+            color: red;
+        }
+
+        h3 {
+            text-align: center;
+            color: green;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .clearfix {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 20px; 
+        }
+
+        .cancelbtn,
+        .loginbtn {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 1%;
+        }
+
+        .cancelbtn {
+            background-color: #ccc;
+            color: #000;
+        }
+
+        .loginbtn {
+            background-color: dodgerblue;
+            color: #fff;
+        }
+
+        .loginbtn:hover {
+            background-color: #0066cc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+                box-shadow: none;
+            }
+
+            .clearfix {
+                flex-direction: column;
+            }
+
+            .cancelbtn,
+            .loginbtn {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+
+        .message {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="a">
+    <form action="/" class="container" method="POST">
+        <h1>Login</h1>
+        <div class="input-group">
+            <label for="name">Enter your username</label>
+            <input type="text" id="name" name="lname" placeholder="Enter your username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="lpsw" placeholder="Enter your password" required>
+        </div>
+
+        <div class="clearfix">
+            <button type="button" class="cancelbtn" onclick="location.href='./index.html'">Cancel</button>
+            <button type="submit" name="loginsubmit" class="loginbtn">Login</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

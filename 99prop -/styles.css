@@ -1,0 +1,134 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px; /* You can adjust this */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap link color */
+}
+
+/* Search Section */
+.search-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.search-section input,
+.search-section select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-md-3 {
+        flex: 0 0 25%; /* 4 columns */
+        max-width: 25%;
+    }
+}
+
+/* Additional Styles */
+.btn-info {
+    background-color: #17a2b8; /* Custom info button color */
+}
+
+.btn-info:hover {
+    background-color: #138496; /* Darker shade for hover */
+}
